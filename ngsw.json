@@ -1,0 +1,86 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.940a57c74664e8c1196d.js",
+        "/polyfills.2f4a59095805af02bd79.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.34c57ab7888ec1573f9c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/manifest.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "RedditAPI",
+      "patterns": [
+        "https:\\/\\/reddit\\.com\\/r\\/memes\\.json",
+        "https:\\/\\/reddit\\.com\\/r\\/[^\\/]*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 86400000,
+      "timeoutMs": 3000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "54cb3d405b41c03d30957fb920298b55852f436e",
+    "/assets/icons/icon-144x144.png": "eaf23e9dec9ae4ea6ce5943bade93f39ce5ceecd",
+    "/assets/icons/icon-152x152.png": "23275512818ebb6679496fea5e3a4364b691e51a",
+    "/assets/icons/icon-192x192.png": "3d4df109d936bd6db426f980f5afbde396e3a17d",
+    "/assets/icons/icon-384x384.png": "3d4df109d936bd6db426f980f5afbde396e3a17d",
+    "/assets/icons/icon-512x512.png": "3d4df109d936bd6db426f980f5afbde396e3a17d",
+    "/assets/icons/icon-72x72.png": "aaba7fca88415555eef8015c0e9d2590cb37d9bd",
+    "/assets/icons/icon-96x96.png": "7405840af74ad89be9591e51ded2fe1883616909",
+    "/assets/manifest.json": "b947601a8f023db5690e07265080a74bbbe70f5b",
+    "/favicon.ico": "54cb3d405b41c03d30957fb920298b55852f436e",
+    "/index.html": "022175fb7ac62029eda751d949b30a997a803683",
+    "/main.940a57c74664e8c1196d.js": "8af5a02c9b5d6d52b5ca50c4fa3aa9fa938bbd50",
+    "/polyfills.2f4a59095805af02bd79.js": "8949bb1b1e302dda246f6ed9c2da703270360b1f",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.34c57ab7888ec1573f9c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
